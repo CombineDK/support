@@ -163,23 +163,6 @@ if (! function_exists('array_forget')) {
     }
 }
 
-if (! function_exists('array_get')) {
-    /**
-     * Get an item from an array using "dot" notation.
-     *
-     * @param  \ArrayAccess|array  $array
-     * @param  string  $key
-     * @param  mixed   $default
-     * @return mixed
-     *
-     * @deprecated Arr::get() should be used directly instead. Will be removed in Laravel 6.0.
-     */
-    function array_get($array, $key, $default = null)
-    {
-        return Arr::get($array, $key, $default);
-    }
-}
-
 if (! function_exists('array_has')) {
     /**
      * Check if an item or items exist in an array using "dot" notation.
